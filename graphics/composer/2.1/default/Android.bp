@@ -1,11 +1,11 @@
 cc_library_shared {
-    name: "android.hardware.graphics.composer@2.1-impl",
+    name: "android.hardware.graphics.composer@2.1-impl-pie",
     defaults: ["hidl_defaults"],
     vendor: true,
     relative_install_path: "hw",
     srcs: ["passthrough.cpp"],
     header_libs: [
-        "android.hardware.graphics.composer@2.1-passthrough",
+        "android.hardware.graphics.composer@2.1-passthrough-pie",
     ],
     shared_libs: [
         "android.hardware.graphics.composer@2.1",
@@ -19,8 +19,8 @@ cc_library_shared {
         "liblog",
         "libsync",
         "libutils",
-        "libhwc2on1adapter",
-        "libhwc2onfbadapter",
+        "libhwc2on1adapter-pie",
+        "libhwc2onfbadapter-pie",
     ],
     cflags: [
         "-DLOG_TAG=\"ComposerHal\""
@@ -28,12 +28,12 @@ cc_library_shared {
 }
 
 cc_binary {
-    name: "android.hardware.graphics.composer@2.1-service",
+    name: "android.hardware.graphics.composer@2.1-service-pie",
     defaults: ["hidl_defaults"],
     vendor: true,
     relative_install_path: "hw",
     srcs: ["service.cpp"],
-    init_rc: ["android.hardware.graphics.composer@2.1-service.rc"],
+    init_rc: ["android.hardware.graphics.composer@2.1-service-pie.rc"],
     shared_libs: [
         "android.hardware.graphics.composer@2.1",
         "libbinder",

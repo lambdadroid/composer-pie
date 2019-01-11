@@ -1,16 +1,16 @@
 cc_library_headers {
-    name: "android.hardware.graphics.composer@2.1-passthrough",
+    name: "android.hardware.graphics.composer@2.1-passthrough-pie",
     defaults: ["hidl_defaults"],
     vendor: true,
     shared_libs: [
         "libhardware",
-        "libhwc2on1adapter",
-        "libhwc2onfbadapter",
+        "libhwc2on1adapter-pie",
+        "libhwc2onfbadapter-pie",
     ],
     export_shared_lib_headers: [
         "libhardware",
-        "libhwc2on1adapter",
-        "libhwc2onfbadapter",
+        "libhwc2on1adapter-pie",
+        "libhwc2onfbadapter-pie",
     ],
     header_libs: [
         "android.hardware.graphics.composer@2.1-hal",

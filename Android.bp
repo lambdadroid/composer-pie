@@ -1,0 +1,8 @@
+subdirs = [
+    "graphics/composer/2.1/default",
+    "graphics/composer/2.1/utils/command-buffer",
+    "graphics/composer/2.1/utils/hal",
+    "graphics/composer/2.1/utils/hwc2on1adapter",
+    "graphics/composer/2.1/utils/hwc2onfbadapter",
+    "graphics/composer/2.1/utils/passthrough",
+]
